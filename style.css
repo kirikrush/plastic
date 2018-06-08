@@ -7,6 +7,7 @@
 
 body {
     position: relative;
+    min-width: 1440px;
 }
 
 @font-face {
@@ -328,6 +329,7 @@ footer {
     color: #202020;
     font-size: 24px;
     font-weight: 400;
+    line-height: 1.5em;
 }
 
 .flex__container {
@@ -512,21 +514,206 @@ footer {
     padding: 80px 15% 200px 15%;
 }
 
-.worldwide .section__img{
-    width:50%;
-    right:10px;
-    top:80px;
+.worldwide .section__img {
+    width: 50%;
+    right: 10px;
+    top: 13%;
 }
 
-.worldwide__text{
-    width:70%;
+.worldwide__text {
+    width: 70%;
 }
 
-.worldwide .paragraph{
-    width:70%;
+.worldwide .paragraph {
+    width: 70%;
 }
 
-.small{
-    width:300px;
-    margin-top:50px;
+.small {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.autopark {
+    position: relative;
+    padding: 60px 15%;
+    background-color: #f4f4f4;
+    overflow: visible;
+}
+
+.autopark .section__text {
+    left: 0;
+    width: 50%;
+}
+
+.autopark .section__img {
+    top: -80px;
+    right: 0;
+    width: 50%;
+    z-index: 100;
+}
+
+.autopark .paragraph {
+    margin-top: 20px;
+    width: 75%;
+}
+
+.post {
+    position: relative;
+    padding: 60px 25%;
+    background-image: url(images/postbg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post .paragraph {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.white {
+    color: #fff;
+    text-align: center;
+}
+
+.post__form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.post button[type=submit] {
+    width: 200px;
+}
+
+.wraper {
+    display: block;
+    height: 20px;
+}
+
+.post input[type=text] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 200px;
+    color: #ffffff;
+    font-family: "PF Agora Sans Pro";
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 23px;
+}
+
+input::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: "PF Agora Sans Pro";
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+input:-moz-placeholder {
+    color: #ffffff;
+    font-family: "PF Agora Sans Pro";
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    color: #ffffff;
+    font-family: "PF Agora Sans Pro";
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.post .wraper::before {
+    content: "";
+    width: 21px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    background-image: url(images/mail.png);
+}
+
+.post .wraper:first-child:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    background-image: url(images/name.png);
+}
+
+.post .paragraph.white.small {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.post .paragraph.small.white::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/confident.png);
+    position: relative;
+    bottom: 0;
+    top: 15px;
+}
+
+.contacts {
+    padding: 60px 15%;
+    position: relative;
+    overflow: visible;
+}
+
+
+.city {
+    margin-top: 40px;
+    display:inline-flex;
+    align-items: flex-start;
+}
+
+.flex__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.min {
+    font-size: 24px;
+    margin-bottom:10px;
+}
+
+.paragraph.min {
+    opacity: 0.46;
+    color: #202020;
+    font-family: "PF Agora Sans Pro";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top:10px;
+}
+
+.contacts__text {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.city .paragraph.blue{
+    font-size: 40px;
+}
+
+footer a{
+    color:#fff;
+}
+
+footer a:visited{
+    color:#fff;
 }

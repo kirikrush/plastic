@@ -6,6 +6,12 @@ $(document).ready(() => {
         }, 1000);
     })
 
+    $(".city").mouseenter(e => {
+        $(e.currentTarget).find(".geolocate").toggleClass("bounce animated");
+        setTimeout(() => {
+            $(e.currentTarget).find(".geolocate").toggleClass("bounce animated");
+        }, 1000);
+    })
 
     $(".animated__round").mouseenter(e => {
         $(e.currentTarget).toggleClass("rubberBand animated infinite");
